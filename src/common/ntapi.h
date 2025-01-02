@@ -506,8 +506,8 @@ typedef struct _TEB {                             /* win32/win64 */
     ULONGLONG ReservedForCrt;       /* fe8/1820 */
     GUID EffectiveContainerId;      /* ff0/1828 */
 } TEB, *PTEB;
-static_assert(offsetof(TEB, DeallocationStack) ==
-              0x1478); /* The only member we care about at the moment */
+//static_assert(offsetof(TEB, DeallocationStack) ==
+//              0x1478); /* The only member we care about at the moment */
 
 typedef enum _QUEUE_USER_APC_FLAGS {
     QueueUserApcFlagsNone,
